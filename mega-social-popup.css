@@ -1,0 +1,137 @@
+#megasocialpopup_overlay {
+	position: fixed;
+	z-index: 1000004;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+#megasocialpopup_window {
+	font-size: 14px;
+	font-family: arial, verdana;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	position: fixed;
+	z-index: 1000005;
+	visibility: hidden;
+	text-align: left;
+	top: 50%;
+	left: 50%;
+	border: 0px solid #AAA;
+	-moz-box-shadow: rgba(32,32,32,1) 0 4px 30px;
+	-o-box-shadow: rgba(32,32,32,1) 0 4px 30px;
+	-webkit-box-shadow: rgba(32,32,32,1) 0 4px 30px;
+	-khtml-box-shadow: rgba(32,32,32,1) 0 4px 30px;
+	box-shadow: rgba(32,32,32,1) 0 4px 30px;
+}
+
+#megasocialpopup_close {
+	position: absolute; 
+	top: -15px; 
+	right: -15px; 
+	cursor: pointer; 
+	width: 30px; 
+	height: 30px; 
+	background: transparent url(../images/close.png) 0 0 no-repeat;
+}
+
+.megasocialpopup_box {
+	position: relative;
+	overflow: hidden;
+}
+
+#megasocialpopup_delay {
+	position: absolute;
+	bottom: 3px;
+	right: 5px;
+	font-size: 11px;
+	color: #808080;
+}
+
+#megasocialpopup_content {
+	clear: both;
+	overflow: auto;
+	text-align: left;
+	line-height: 1.4em;
+	padding: 15px;
+	overflow: hidden;
+}
+
+#megasocialpopup_content p {
+	padding: 0px 0px 5px 0px;
+}
+
+#megasocialpopup_form {
+	margin-top: 10px;
+	overflow: hidden;
+	margin-right: 0px;
+	height: 100%;
+}
+
+.megasocialpopup_area {
+	float: left;
+	overflow: hidden;
+	height: 100%;
+}
+
+#megasocialpopup_content a {
+	text-decoration: none;
+}
+#megasocialpopup_content a:hover,
+#megasocialpopup_content a:focus,
+#megasocialpopup_content a:active {
+	text-decoration: underline;
+}
+
+#megasocialpopup_social {
+	min-height: 60px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.megasocialpopup_socialitem {
+	display: inline-block;
+}
+.megasocialpopup_socialitem_space {
+	display: inline-block;
+	width: 5%;
+	max-width: 20px;
+	height: 60px;
+}
+
+/* White Font Scheme */
+div.megasocialpopup_font_light {
+	color: #CCC !important;
+}
+.megasocialpopup_font_light a {
+	color: #FFF !important;
+}
+.megasocialpopup_font_light a:hover,
+.megasocialpopup_font_light a:focus,
+.megasocialpopup_font_light a:active {
+	color: #F8F8F8 !important;
+}
+
+/* Dark Font Scheme */
+div.megasocialpopup_font_dark {
+	color: #444 !important;
+}
+.megasocialpopup_font_dark a {
+	color: #457 !important;
+}
+.megasocialpopup_font_dark a:hover,
+.megasocialpopup_font_dark a:focus,
+.megasocialpopup_font_dark a:active {
+	color: #446 !important;
+}
+
+@media screen and (max-width: 320px) {  
+	.megasocialpopup_socialitem_space {
+		width: 5px !important;
+	}
+}
